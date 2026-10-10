@@ -1,0 +1,83 @@
+# ===========================
+# Ticker — .gitignore
+# ===========================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+*.spec
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+.env/
+Lib/
+Scripts/
+Include/
+
+# --- Environment / secrets ---
+.env
+.env.local
+.env.production
+.env.staging
+*.secret
+
+# --- SQLite databases (generated at runtime) ---
+*.db
+*.sqlite
+*.sqlite3
+ticker.db
+test_*.db
+
+# --- Pytest / coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.lcov
+.cache/
+
+# --- MyPy / type checkers ---
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# --- IDE ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- OS artifacts ---
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- Node / package managers (unlikely but safe) ---
+node_modules/
+package-lock.json
+yarn.lock
+
+# --- Distribution / packaging ---
+MANIFEST
